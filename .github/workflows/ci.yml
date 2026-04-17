@@ -1,18 +1,10 @@
-name: CI
+# .github/workflows/test.yml
+name: Test CI
 
-on:
-  pull_request:
-    types: [opened, reopened, synchronize]
-  push:
-    branches: [main, develop]
+on: [pull_request]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout código
-        uses: actions/checkout@v4
-
-      - name: Simular build com sucesso
-        run: echo "Build OK"
+      - run: exit 1
