@@ -1,9 +1,0 @@
-name: Teste de Webhook
-
-on: [push, pull_request]
-
-jobs:
-  disparar-evento:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "Alô, Webhook! Agora eu rodo em PR também!"
