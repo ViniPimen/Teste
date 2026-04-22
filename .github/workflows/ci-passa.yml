@@ -13,5 +13,5 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Simula falha de build
-        run: exit 1
+      - name: Simula build bem-sucedido
+        run: echo "Build OK"
